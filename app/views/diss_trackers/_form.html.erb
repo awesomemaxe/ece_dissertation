@@ -1,0 +1,61 @@
+<%= form_for(@diss_tracker) do |f| %>
+  <% if @diss_tracker.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@diss_tracker.errors.count, "error") %> prohibited this diss_tracker from being saved:</h2>
+
+      <ul>
+      <% @diss_tracker.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :UID %><br>
+    <%= f.text_field :UID %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :titile %><br>
+    <%= f.text_field :titile %>
+  </div>
+  <div class="field">
+    <%= f.label :chair %><br>
+    <%= f.text_field :chair %>
+  </div>
+  <div class="field">
+    <%= f.label :advisor %><br>
+    <%= f.text_field :advisor %>
+  </div>
+  <div class="field">
+    <%= f.label :reader2 %><br>
+    <%= f.text_field :reader2 %>
+  </div>
+  <div class="field">
+    <%= f.label :reader3 %><br>
+    <%= f.text_field :reader3 %>
+  </div>
+  <div class="field">
+    <%= f.label :reader4 %><br>
+    <%= f.text_field :reader4 %>
+  </div>
+  <div class="field">
+    <%= f.label :reader5 %><br>
+    <%= f.text_field :reader5 %>
+  </div>
+  <div class="field">
+    <%= f.label :data_approved %><br>
+    <%= f.date_select :data_approved %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

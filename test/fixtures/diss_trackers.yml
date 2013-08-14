@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  UID: MyString
+  last_name: MyString
+  first_name: MyString
+  titile: MyString
+  chair: MyString
+  advisor: MyString
+  reader2: MyString
+  reader3: MyString
+  reader4: MyString
+  reader5: MyString
+  data_approved: 2013-07-10
+
+two:
+  UID: MyString
+  last_name: MyString
+  first_name: MyString
+  titile: MyString
+  chair: MyString
+  advisor: MyString
+  reader2: MyString
+  reader3: MyString
+  reader4: MyString
+  reader5: MyString
+  data_approved: 2013-07-10
